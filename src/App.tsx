@@ -11,7 +11,7 @@ import {
   Heart,
   ArrowRight,
   Mail,
-  Monitor,
+  // Monitor,
   Shield,
   Hammer,
   Key,
@@ -79,11 +79,25 @@ function App() {
             <span className="font-semibold text-foreground">React Starter</span>
           </div>
           <div className="hidden md:flex items-center gap-6">
-            <a href="#features" className="text-sm text-foreground/70 hover:text-foreground transition-colors">Stack</a>
-            <a href="#stack" className="text-sm text-foreground/70 hover:text-foreground transition-colors">Fonctionnalités</a>
+            <a
+              href="#features"
+              className="text-sm text-foreground/70 hover:text-foreground transition-colors"
+            >
+              Stack
+            </a>
+            <a
+              href="#stack"
+              className="text-sm text-foreground/70 hover:text-foreground transition-colors"
+            >
+              Fonctionnalités
+            </a>
           </div>
           <div className="flex items-center gap-3">
-            <Button variant="ghost" size="sm" className="text-foreground/70 hover:text-foreground">
+            <Button
+              variant="ghost"
+              size="sm"
+              className="text-foreground/70 hover:text-foreground"
+            >
               <ExternalLink className="w-4 h-4" />
             </Button>
             <Button variant="glass" size="sm">
@@ -114,19 +128,35 @@ function App() {
               </span>
             </h1>
             <p className="text-xl text-foreground/60 max-w-2xl mx-auto leading-relaxed">
-              Une template complète et parfaitement configurée.
-              React, Vite, TypeScript, Tailwind CSS, shadcn/ui et Lucide Icons — tout ce dont vous avez besoin pour créer de belles applications.
+              Une template complète et parfaitement configurée. React, Vite,
+              TypeScript, Tailwind CSS, shadcn/ui et Lucide Icons — tout ce dont
+              vous avez besoin pour créer de belles applications.
             </p>
           </div>
 
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-16">
-            <Button size="lg" className="gap-2 text-base px-8 h-12 shadow-lg shadow-primary/25">
-              <Rocket className="w-5 h-5" />
-              Commencer maintenant
-              <ArrowRight className="w-4 h-4 ml-1" />
+            <Button
+              asChild
+              size="lg"
+              className="gap-2 text-base px-8 h-12 shadow-lg shadow-primary/25"
+            >
+              <a
+                href="https://github.com/DjoAHP/React-Starter-Template"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center"
+              >
+                <Rocket className="w-5 h-5" />
+                Commencer maintenant
+                <ArrowRight className="w-4 h-4 ml-1" />
+              </a>
             </Button>
-            <Button variant="glassOutline" size="lg" className="text-base px-8 h-12">
+            <Button
+              variant="glassOutline"
+              size="lg"
+              className="text-base px-8 h-12"
+            >
               Voir la documentation
             </Button>
           </div>
@@ -142,7 +172,9 @@ function App() {
                       <div className="w-3 h-3 rounded-full bg-yellow-500/80" />
                       <div className="w-3 h-3 rounded-full bg-green-500/80" />
                     </div>
-                    <span className="text-sm text-foreground/50 ml-2">terminal</span>
+                    <span className="text-sm text-foreground/50 ml-2">
+                      terminal
+                    </span>
                   </div>
                   <Badge variant="glass" className="text-xs">
                     <Server className="w-3 h-3 mr-1.5" />
@@ -153,17 +185,22 @@ function App() {
               <CardContent className="p-6 font-mono text-sm">
                 <div className="space-y-2">
                   <div className="text-foreground/60">
-                    <span className="text-primary">$</span> git clone <span className="text-accent">votre-template</span>
+                    <span className="text-primary">$</span> git clone{" "}
+                    <span className="text-accent">votre-template</span>
                   </div>
                   <div className="text-foreground/60">
-                    <span className="text-primary">$</span> cd votre-template && npm install
+                    <span className="text-primary">$</span> cd votre-template &&
+                    npm install
                   </div>
                   <div className="text-foreground/60">
                     <span className="text-primary">$</span> npm run dev
                   </div>
                   <div className="mt-4 p-3 rounded-md bg-white/5 border border-white/10 text-foreground/80">
-                    <span className="text-green-400">✓</span> Local: http://localhost:5173/
-                    <span className="ml-2 text-foreground/50">• HMR activé</span>
+                    <span className="text-green-400">✓</span> Local:
+                    http://localhost:5173/
+                    <span className="ml-2 text-foreground/50">
+                      • HMR activé
+                    </span>
                   </div>
                 </div>
               </CardContent>
@@ -180,12 +217,15 @@ function App() {
         <div className="max-w-7xl mx-auto relative">
           {/* Section header */}
           <div className="text-center mb-16">
-            <Badge variant="glass" className="mb-4">Stack Technique Complète</Badge>
+            <Badge variant="glass" className="mb-4">
+              Stack Technique Complète
+            </Badge>
             <h2 className="text-4xl font-bold mb-4">
               Tous les outils pour réussir
             </h2>
             <p className="text-foreground/60 max-w-2xl mx-auto">
-              Les dernières versions stables, parfaitement compatibles et prêtes à l'emploi.
+              Les dernières versions stables, parfaitement compatibles et prêtes
+              à l'emploi.
             </p>
           </div>
 
@@ -197,7 +237,9 @@ function App() {
                 className="glass-card border-white/10 hover:border-primary/50 transition-all group"
               >
                 <CardHeader>
-                  <div className={`w-12 h-12 rounded-xl bg-gradient-to-br ${gradient} flex items-center justify-center mb-4 group-hover:scale-105 transition-transform shadow-lg`}>
+                  <div
+                    className={`w-12 h-12 rounded-xl bg-gradient-to-br ${gradient} flex items-center justify-center mb-4 group-hover:scale-105 transition-transform shadow-lg`}
+                  >
                     <Icon className="w-6 h-6 text-white" />
                   </div>
                   <CardTitle>{title}</CardTitle>
@@ -223,7 +265,8 @@ function App() {
               </CardHeader>
               <CardContent>
                 <p className="text-sm text-foreground/60">
-                  Copiez la template, installez les dépendances et commencez à coder immédiatement.
+                  Copiez la template, installez les dépendances et commencez à
+                  coder immédiatement.
                 </p>
               </CardContent>
             </Card>
@@ -238,7 +281,8 @@ function App() {
               </CardHeader>
               <CardContent>
                 <p className="text-sm text-foreground/60">
-                  Composants shadcn/ui copiables, modifiez-les selon vos besoins exacts.
+                  Composants shadcn/ui copiables, modifiez-les selon vos besoins
+                  exacts.
                 </p>
               </CardContent>
             </Card>
@@ -253,7 +297,8 @@ function App() {
               </CardHeader>
               <CardContent>
                 <p className="text-sm text-foreground/60">
-                  Optimisations, type safety, accessibilité — tout est déjà configuré.
+                  Optimisations, type safety, accessibilité — tout est déjà
+                  configuré.
                 </p>
               </CardContent>
             </Card>
@@ -273,7 +318,8 @@ function App() {
                 Restez informé
               </CardTitle>
               <CardDescription className="text-lg max-w-xl mx-auto">
-                Recevez les dernières nouveautés et astuces pour vos projets React & TypeScript.
+                Recevez les dernières nouveautés et astuces pour vos projets
+                React & TypeScript.
               </CardDescription>
             </CardHeader>
             <CardContent className="flex flex-col sm:flex-row items-center justify-center gap-4">
@@ -282,7 +328,10 @@ function App() {
                 placeholder="votre@email.com"
                 className="w-full sm:w-72 h-12 glass-input text-center sm:text-left"
               />
-              <Button size="lg" className="gap-2 px-6 h-12 shadow-lg shadow-primary/25">
+              <Button
+                size="lg"
+                className="gap-2 px-6 h-12 shadow-lg shadow-primary/25"
+              >
                 S'abonner
                 <ArrowRight className="w-4 h-4" />
               </Button>
@@ -303,21 +352,31 @@ function App() {
           </div>
 
           <div className="flex items-center gap-4">
-            <a href="#" className="h-10 w-10 rounded-lg glass-button flex items-center justify-center hover:scale-105 transition-transform" aria-label="GitHub">
+            <a
+              href="#"
+              className="h-10 w-10 rounded-lg glass-button flex items-center justify-center hover:scale-105 transition-transform"
+              aria-label="GitHub"
+            >
               <ExternalLink className="w-5 h-5" />
             </a>
-            <a href="#" className="h-10 w-10 rounded-lg glass-button flex items-center justify-center hover:scale-105 transition-transform" aria-label="Discord">
+            <a
+              href="#"
+              className="h-10 w-10 rounded-lg glass-button flex items-center justify-center hover:scale-105 transition-transform"
+              aria-label="Discord"
+            >
               <Server className="w-5 h-5" />
             </a>
           </div>
 
           <p className="text-foreground/40 text-sm flex items-center gap-1.5">
-            Fabriqué avec <Heart className="w-4 h-4 text-red-500" fill="currentColor" /> et React
+            Fabriqué avec{" "}
+            <Heart className="w-4 h-4 text-red-500" fill="currentColor" /> et
+            React
           </p>
         </div>
       </footer>
     </div>
-  )
+  );
 }
 
 export default App
